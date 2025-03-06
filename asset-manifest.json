@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/News_TZ/static/css/main.c5f08a34.css",
+    "main.css": "/News_TZ/static/css/main.fcf6b988.css",
     "main.js": "/News_TZ/static/js/main.446b29a0.js",
     "static/js/453.ed3810f9.chunk.js": "/News_TZ/static/js/453.ed3810f9.chunk.js",
     "static/media/Lato-Bold.woff": "/News_TZ/static/media/Lato-Bold.38460a841f9f02bac0ef.woff",
@@ -13,12 +13,12 @@
     "static/media/pencil-square-svgrepo-com.svg": "/News_TZ/static/media/pencil-square-svgrepo-com.d2cf43fbcf2d48186ad8f16148449b21.svg",
     "static/media/hamburgerbar-mobile_navigation.svg": "/News_TZ/static/media/hamburgerbar-mobile_navigation.c692f1e41496bba8b2b4605ea1794fba.svg",
     "static/media/Vector.svg": "/News_TZ/static/media/Vector.a939a61e6978b5bc1e9f.svg",
-    "main.c5f08a34.css.map": "/News_TZ/static/css/main.c5f08a34.css.map",
+    "main.fcf6b988.css.map": "/News_TZ/static/css/main.fcf6b988.css.map",
     "main.446b29a0.js.map": "/News_TZ/static/js/main.446b29a0.js.map",
     "453.ed3810f9.chunk.js.map": "/News_TZ/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5f08a34.css",
+    "static/css/main.fcf6b988.css",
     "static/js/main.446b29a0.js"
   ]
 }
