@@ -1,0 +1,23 @@
+.sidebar {
+  padding: 0 0 0 20px;
+}
+
+.sidebar__botton-item {
+  padding: 5px 20px;
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26.4px;
+  letter-spacing: 0.1rem;
+  background-color: black;
+  color: #fff;
+  clip-path: polygon(0% 0%, 85% 0%, 100% 100%, 9% 100%);
+}
+
+.sidebar__link {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26.4px;
+  letter-spacing: 0.1rem;
+}
