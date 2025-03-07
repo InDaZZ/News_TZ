@@ -1,5 +1,5 @@
 import "./Header.css";
-import { ReactComponent as MenuImage } from "../images/hamburgerbar-mobile_navigation.svg";
+import MenuImage from "../images/hamburgerbar-mobile_navigation.svg";
 import { ModalContext } from "../Context/Context";
 import { useContext } from "react";
 import SideBar from "../SideBar/SideBar";
@@ -23,7 +23,7 @@ function Header() {
             className="header__side-menu"
             onClick={openModal}
           >
-            <MenuImage width={"100%"} />
+            <img src={MenuImage} alt="menuaicon"></img>
           </button>
           <h1 className="header__title">BESIDER</h1>
         </div>

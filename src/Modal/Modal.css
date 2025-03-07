@@ -38,13 +38,15 @@
   opacity: 1;
   transform: translateY(0);
   visibility: visible;
+  top: 4rem;
 }
 
 .modal__button-close {
+  z-index: 10;
   width: 32px;
   height: 32px;
   position: absolute;
-  top: 10%;
+  top: 2rem;
   right: 20px;
   background-image: url(../images/Vector.svg);
   background-color: rgb(0, 0, 0, 0);

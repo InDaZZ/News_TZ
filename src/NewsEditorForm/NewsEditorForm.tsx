@@ -1,4 +1,4 @@
-import { FC, useEffect } from "react";
+import { FC, useEffect, useRef } from "react";
 import { FieldValues, useForm } from "react-hook-form";
 import "./NewsEditorForm.css";
 import { NewsItem } from "../types/types";
@@ -26,32 +26,34 @@ const NewsEditorForm: FC<INewsEditorFormProps> = (props) => {
   };
 
   return (
-    <form onSubmit={handleSubmit(sub)} className="newseditor__form">
-      <label className="newseditor__label">
-        <h3 className="newseditor__input-title">Short Description</h3>
-        <textarea
-          className="newseditor__input newseditor__input_textarea"
-          placeholder="Title"
-          {...register("title", {
-            required: true,
-          })}
-        ></textarea>
-      </label>
-      <label className="newseditor__label">
-        <h3 className="newseditor__input-title">Image URL</h3>
-        <input
-          className="newseditor__input"
-          placeholder="Image Link"
-          {...register("multimedia", {
-            required: true,
-          })}
-        ></input>
-      </label>
+    <div className="newseditor__form-container">
+      <form onSubmit={handleSubmit(sub)} className="newseditor__form">
+        <label className="newseditor__label">
+          <h3 className="newseditor__input-title">Short Description</h3>
+          <textarea
+            className="newseditor__input newseditor__input_textarea"
+            placeholder="Title"
+            {...register("title", {
+              required: true,
+            })}
+          ></textarea>
+        </label>
+        <label className="newseditor__label">
+          <h3 className="newseditor__input-title">Image URL</h3>
+          <input
+            className="newseditor__input"
+            placeholder="Image Link"
+            {...register("multimedia", {
+              required: true,
+            })}
+          ></input>
+        </label>
 
-      <button type="submit" className="newseditor__submit">
-        {buttonText}
-      </button>
-    </form>
+        <button type="submit" className="newseditor__submit">
+          {buttonText}
+        </button>
+      </form>
+    </div>
   );
 };
 

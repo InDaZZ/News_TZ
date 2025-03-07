@@ -5,22 +5,27 @@ import News from "../News/News";
 import ModalContextProvider from "../Context/Context";
 
 export const AppRouter = () => {
-  const router = createBrowserRouter([
+  const router = createBrowserRouter(
+    [
+      {
+        path: routePaths[EAppRoutes.MAIN],
+        element: <Layout key="Layout" />,
+        children: [
+          {
+            path: routePaths[EAppRoutes.NEWS],
+            element: [
+              <ModalContextProvider>
+                <News key="News" />
+              </ModalContextProvider>,
+            ],
+          },
+        ],
+      },
+    ],
     {
-      path: routePaths[EAppRoutes.MAIN],
-      element: <Layout key="Layout" />,
-      children: [
-        {
-          path: routePaths[EAppRoutes.NEWS],
-          element: [
-            <ModalContextProvider>
-              <News key="News" />
-            </ModalContextProvider>,
-          ],
-        },
-      ],
-    },
-  ]);
+      basename: "/News_TZ",
+    }
+  );
   return (
     <div className="app">
       <RouterProvider router={router}></RouterProvider>

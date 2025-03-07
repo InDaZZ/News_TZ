@@ -31,6 +31,8 @@ function AddNewsModal({ closeModal }: { closeModal: () => void }) {
         Back to Menu
       </button>
       <NewsEditorForm onSubmit={onSubmit} buttonText="Add"></NewsEditorForm>
+      <div></div>
+      <div></div>
     </div>
   );
 }
